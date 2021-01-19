@@ -23,6 +23,13 @@ WriteMakefile(
                 : ()),
         },
     },
+    CONFIGURE_REQUIRES => {
+        'ExtUtils::Makemaker' => 6.56,
+    },
+    BUILD_REQUIRES => {
+        'Encode' => 2,
+        'Encode::Alias' => 0,
+    },
     TEST_REQUIRES => {
         'Test::More' => 0,
     },
